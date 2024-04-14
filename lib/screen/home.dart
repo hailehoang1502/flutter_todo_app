@@ -32,7 +32,7 @@ class _HomeState extends State<Home> {
       body: Stack(
         children: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             child: Column(
               children: [
                 searchBox(),
@@ -40,8 +40,8 @@ class _HomeState extends State<Home> {
                   child: ListView(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(top: 50, bottom: 20),
-                        child: Text(
+                        margin: const EdgeInsets.only(top: 50, bottom: 20),
+                        child: const Text(
                           'Công Việc Hôm Nay',
                           style: TextStyle(
                               fontSize: 30,
@@ -65,14 +65,14 @@ class _HomeState extends State<Home> {
               children: [
                 Expanded(
                     child: Container(
-                      margin: EdgeInsets.only(
+                      margin: const EdgeInsets.only(
                           bottom: 20,
                           right: 20,
                           left: 20),
-                      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                       decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: [BoxShadow(
+                          boxShadow: const [BoxShadow(
                               color: Colors.grey,
                               offset: Offset(0.0, 0.0),
                               blurRadius: 10.0,
@@ -82,7 +82,7 @@ class _HomeState extends State<Home> {
                       ),
                       child: TextField(
                         controller: _todoController,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                             hintText: "Thêm công việc mới",
                             hintStyle: TextStyle(color: Colors.grey),
                             border: InputBorder.none
@@ -91,7 +91,7 @@ class _HomeState extends State<Home> {
                     )
                 ),
                 Container(
-                  margin: EdgeInsets.only(
+                  margin: const EdgeInsets.only(
                       bottom: 20,
                       right: 20
                   ),
@@ -101,11 +101,11 @@ class _HomeState extends State<Home> {
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
-                        shape: CircleBorder(),
+                        shape: const CircleBorder(),
                         minimumSize: Size(60, 60),
                         elevation: 10
                     ),
-                    child: Text("+", style: TextStyle(fontSize: 40, color: Colors.white),),
+                    child: const Text("+", style: TextStyle(fontSize: 40, color: Colors.white),),
                   ),
                 )
               ],
@@ -155,7 +155,7 @@ class _HomeState extends State<Home> {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(
+          const Icon(
             Icons.menu,
             color: Colors.black,
             size: 30,),
@@ -181,7 +181,7 @@ class _HomeState extends State<Home> {
       ),
       child: TextField(
         onChanged: (value) => _runFilter(value),
-        decoration: InputDecoration(
+        decoration: const InputDecoration(
             contentPadding: EdgeInsets.all(0),
             prefixIcon: Icon(
               Icons.search,
