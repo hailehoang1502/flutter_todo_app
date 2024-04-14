@@ -14,14 +14,14 @@ class ToDoItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: 20),
       child: ListTile(
         onTap: () {
           onToDoChanged(todo);
         },
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
-            side: BorderSide(color: Colors.black, width: 0.5)
+            side: const BorderSide(color: Colors.black, width: 0.5)
         ),
         tileColor: Colors.white,
         leading: Icon(
@@ -46,7 +46,7 @@ class ToDoItem extends StatelessWidget {
           child: IconButton(
             color: Colors.white,
             iconSize: 18,
-            icon: Icon(Icons.delete),
+            icon: const Icon(Icons.delete),
             onPressed: () {
               onDeleteItem(todo.id);
             },
