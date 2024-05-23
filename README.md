@@ -1,16 +1,7 @@
 # flutter_todo_application
 
-A new Flutter project.
+A new mini todo app Flutter project.
 
-## Getting Started
+Description: An application helps users to manage daily tasks. Users can add, delete, mark completed or search for jobs in the job list.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Demo Video](https://drive.google.com/file/d/10n5LKCA4pJp14NUXsctCf_tWoHIiqRNR/view?usp=sharing)
